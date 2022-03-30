@@ -1,13 +1,16 @@
 import { useState } from "react"
 import style from '../Pages/CSS/NavBar.module.css'
 import Projects from "./Projects"
+import About from "./About"
+import Blog from './Blog'
+import Contact from "./Contact"
 const arr = ['about me', 'projects','contact','page info']
 
 const newArr = [
     {
         text:'about me',
         tooltip:'Basically an autobiography',
-        component:<Projects/>
+        component:<About/>
     },
     {
         text:'projects',
@@ -17,12 +20,12 @@ const newArr = [
     {
         text:'contact',
         tooltip:'hit me up broh',
-        component:<Projects/>
+        component:<Contact/>
     },
     {
-        text:'page info',
-        tooltip:'Details about this page & how it was made',
-        component:<Projects/>
+        text:'blog',
+        tooltip:'personal blog because I wanted one',
+        component:<Blog/>
     }
 ]
 
